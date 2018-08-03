@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}    http://localhost:8080
+${URL}    http://localhost:8080/gameXO/viewControl
 ${BROWSER}    chrome
 
 *** Test Cases ***
