@@ -19,7 +19,7 @@ Player 2 Win
 
 *** Keywords ***
 เปิดหน้าเว็บ
-    Open Browser ${URL} ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}
 วางที่ช่อง 2 1
     Click Element    id=R2_C1
     Wait Until Element Contains    id=R2_C1    x

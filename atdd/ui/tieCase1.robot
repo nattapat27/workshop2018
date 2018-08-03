@@ -19,7 +19,7 @@ ${BROWSER}    chrome
     ปิดหน้าเว็บ
 *** Keywords ***
 เปิดหน้าเว็บ
-    Open Browser ${URL} ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}
 วางที่ช่อง 2 2
     Click Element    id=R2_C2
     Wait Until Element Contains    id=R2_C2    x
