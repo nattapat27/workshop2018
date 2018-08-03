@@ -48,6 +48,6 @@ ${BROWSER}    chrome
     Click Element    id=R3_C2
     Wait Until Element Contains    id=R3_C2    x
 แสดงคะแนนเสมอเพิ่มไป 1
-    Wait Until Element Contains    id=tie    1
+    Wait Until Element Contains    id=tieScore    1
 ปิดหน้าเว็บ
     Close Browser
