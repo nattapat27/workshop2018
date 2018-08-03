@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180803 14:00:40.649" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="D:\workshop2018\tieCase1.robot" id="s1" name="tieCase1">
+<test id="s1-t1" name="ผู้เล่นสองคนเสมอกัน">
+<kw name="เปิดหน้าเว็บ">
+<kw name="Open Browser ${URL} ${BROWSER}">
+<msg timestamp="20180803 14:00:46.695" level="FAIL">No keyword with name 'Open Browser ${URL} ${BROWSER}' found.</msg>
+<status status="FAIL" endtime="20180803 14:00:46.696" starttime="20180803 14:00:46.695"></status>
+</kw>
+<status status="FAIL" endtime="20180803 14:00:46.696" starttime="20180803 14:00:46.692"></status>
+</kw>
+<status status="FAIL" endtime="20180803 14:00:46.696" critical="yes" starttime="20180803 14:00:46.690">No keyword with name 'Open Browser ${URL} ${BROWSER}' found.</status>
+</test>
+<status status="FAIL" endtime="20180803 14:00:46.699" starttime="20180803 14:00:40.651"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="tieCase1" pass="0">tieCase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
