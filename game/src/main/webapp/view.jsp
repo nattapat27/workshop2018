@@ -10,10 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     </head>
-    <body style="background-color: black">
-        <h1 align="center" id="A">Tic-Tac-Toe</h1>
-        <table border="1" style="width: 500px; border-color: white;" align="center">
+    <body style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+        <h1 align="center" id="A" style="font-family: 'Kanit', sans-serif;color: #373737;">Tic-Tac-Toe</h1>
+        <table border="3px solid " style="width: 500px; border-color: #373737" align="center">
             <tr style="height: 130px">
                 <td id="R1_C1" onclick="showPicture('R1_C1')"></td>
                 <td id="R1_C2" onclick="showPicture('R1_C2')"></td>
@@ -38,11 +39,18 @@
     </body>
     <style>
         h1,p,tr{
-            color: white
+            color: white;
+            font-family: 'Kanit', sans-serif;
+            color: #373737;
         }
         table{
             border-collapse: collapse;
             table-layout: fixed;
+            color: #373737;
+        }
+        #symbol{
+            text-align: center;
+            font-size: 50px;
         }
 
     </style>
@@ -52,9 +60,9 @@
             if(document.getElementById(name).innerHTML!="O" && document.getElementById(name).innerHTML!="X"){
                 turn++;
                 if(turn%2==0){
-                document.getElementById(name).innerHTML = "O"
+                document.getElementById(name).innerHTML = "<h1 id='symbol'>O</h1>"
                 }else{
-                    document.getElementById(name).innerHTML = "X"
+                    document.getElementById(name).innerHTML = "<h1 id='symbol'>X</h1>"
                 }
             }
         }  
