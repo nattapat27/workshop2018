@@ -32,9 +32,9 @@
             </tr>
         </table>
         <div align="center" style="padding-top: 20px">
-            <div style="display: inline-block; padding: 10px"><p>Player 1 (X) : ${player1Score}</p></div>
-            <div style="display: inline-block; padding: 10px"><p>Tie : ${tieScore}</p></div>
-            <div style="display: inline-block; padding: 10px"><p>Player 2 (O) : ${player2Score}</p></div>
+            <div id="player1Score" style="display: inline-block; padding: 10px"><p>Player 1 (X) : ${player1Score}</p></div>
+            <div id="tieScore" style="display: inline-block; padding: 10px"><p>Tie : ${tieScore}</p></div>
+            <div id="player2Score" style="display: inline-block; padding: 10px"><p>Player 2 (O) : ${player2Score}</p></div>
         </div>
     </body>
     <style>
@@ -52,6 +52,10 @@
             text-align: center;
             font-size: 50px;
         }
+        td{
+            text-align: center;
+            font-size: 50px
+        }
 
     </style>
     <script>
@@ -60,9 +64,9 @@
             if(document.getElementById(name).innerHTML!="O" && document.getElementById(name).innerHTML!="X"){
                 turn++;
                 if(turn%2==0){
-                document.getElementById(name).innerHTML = "<h1 id='symbol'>O</h1>"
+                document.getElementById(name).innerHTML = "O"
                 }else{
-                    document.getElementById(name).innerHTML = "<h1 id='symbol'>X</h1>"
+                    document.getElementById(name).innerHTML = "X"
                 }
             }
         }  

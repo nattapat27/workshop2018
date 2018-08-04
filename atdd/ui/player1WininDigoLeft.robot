@@ -18,19 +18,19 @@ ${BROWSER}    chrome
     Open Browser    ${URL}    ${BROWSER}
 วางที่ช่อง 1 1
     Click Element    id=R1_C1
-    Wait Until Element Contains    id=R1_C1    x
+    Wait Until Element Contains    id=R1_C1    X
 วางที่ช่อง 1 3
     Click Element    id=R1_C3
-    Wait Until Element Contains    id=R1_C3    o
+    Wait Until Element Contains    id=R1_C3    O
 วางที่ช่อง 3 3
     Click Element    id=R3_C3
-    Wait Until Element Contains    id=R3_C3    x
+    Wait Until Element Contains    id=R3_C3    X
 วางที่ช่อง 3 1
     Click Element    id=R3_C1
-    Wait Until Element Contains    id=R3_C1    o
+    Wait Until Element Contains    id=R3_C1    O
 วางที่ช่อง 2 2
     Click Element    id=R2_C2
-    Wait Until Element Contains    id=R2_C2    x
+    Wait Until Element Contains    id=R2_C2    X
 แสดงคะแนนผู้เล่น 1 เพิ่มไป 1
     Wait Until Element Contains    id=player1Score    1
 ปิดหน้าเว็บ
