@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class GameTableTest {
     
     public GameTableTest() {
-        System.out.println("dfdssss")
+        
     }
     
     @Test
@@ -23,5 +23,12 @@ public class GameTableTest {
         String str = "aaa";
         assertEquals(str, str);
     }
-    
+    public void addSymbolinTable11(){
+        GameTable gameTable = new GameTable();
+        char[][] tableResult = gameTable.addSymbol(1,1,'x');
+        char[][] table = new char[3][3];
+        table[1][1] = 'x';
+        assertArrayEquals(table, tableResult);
+        
+    }
 }
