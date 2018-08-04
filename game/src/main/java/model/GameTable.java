@@ -124,12 +124,14 @@ public class GameTable {
         return result;
     }
 
-    public static String checkPlayerWinner(int player){
+    public String checkPlayerWinner(int player){
         String playerWhoWin = "";
         if(player%2==0){
             playerWhoWin = "Player 1 win!";
+            scorePlayer1++;
         }else{
             playerWhoWin = "Player 2 win!";
+            scorePlayer2++;
         }
         return playerWhoWin;
     }
