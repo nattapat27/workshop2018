@@ -54,8 +54,15 @@ public class GameTable {
     public void plusTie(){
         this.scoreTie++;
     }
+    public void plusPlayer1(){
+        this.scorePlayer1++;
+    }
     
-     public boolean isVerticalWin(char array[][], int row, int column, char symbol) {
+    public void plusPlayer2(){
+        this.scorePlayer2++;
+    }
+    
+    public boolean isVerticalWin(char array[][], int row, int column, char symbol) {
         boolean result = false;
         if (array[0][column] == symbol) {
             if (array[1][column] == symbol) {
