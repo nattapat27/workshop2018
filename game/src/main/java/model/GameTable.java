@@ -59,14 +59,13 @@ public class GameTable {
     public void plusTie(){
         this.scoreTie++;
     }
-<<<<<<< HEAD
 
     char[][] addSymbol(int r, int c, char symbol) {
         table[r][c] = symbol;
         return table;
-=======
+    }
     
-     public boolean isVerticalWin(char array[][], int row, int column, char symbol) {
+    public boolean isVerticalWin(char array[][], int row, int column, char symbol) {
         boolean result = false;
         if (array[0][column] == symbol) {
             if (array[1][column] == symbol) {
@@ -76,6 +75,5 @@ public class GameTable {
             }
         }
         return result;
->>>>>>> master
     }
 }
