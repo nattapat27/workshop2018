@@ -15,7 +15,7 @@
         <h1 align="center" id="A">Tic-Tac-Toe</h1>
         <table border="1" style="width: 500px; border-color: white;" align="center">
             <tr style="height: 130px">
-                <td id="R1_C1" onclick="showPicture('R1_C1')"> </td>
+                <td id="R1_C1" onclick="showPicture('R1_C1')"></td>
                 <td id="R1_C2" onclick="showPicture('R1_C2')"></td>
                 <td id="R1_C3" onclick="showPicture('R1_C3')"></td>
             </tr>
@@ -47,14 +47,17 @@
 
     </style>
     <script>
+        turn = 0;
         function showPicture(name) {
-            turn = ${turn};
-            if(turn%2==0){
+            if(document.getElementById(name).innerHTML!="O" && document.getElementById(name).innerHTML!="X"){
+                turn++;
+                if(turn%2==0){
                 document.getElementById(name).innerHTML = "O"
-            }else{
-                document.getElementById(name).innerHTML = "X"
+                }else{
+                    document.getElementById(name).innerHTML = "X"
+                }
             }
-        }
+        }  
     </script>
     
     
