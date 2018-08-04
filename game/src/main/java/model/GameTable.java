@@ -13,12 +13,17 @@ import java.util.Arrays;
  */
 public class GameTable {
 
-    private Arrays table[][];
+    private char table[][];
     private int scorePlayer1;
     private int scorePlayer2;
     private int scoreTie;
     private int turn;
 
+    public GameTable() {
+        initialValue();
+        createTable();
+    }
+    
     public  void initialValue() {
         this.scorePlayer1 = 0;
         this.scorePlayer2 = 0;
@@ -27,7 +32,7 @@ public class GameTable {
     }
     
     public void createTable() {
-        table = new Arrays[3][3];
+        table = new char[3][3];
     }
 
     public boolean isHorizontalWin(char array[][], int row, int column, char symbol) {
@@ -53,5 +58,10 @@ public class GameTable {
     
     public void plusTie(){
         this.scoreTie++;
+    }
+
+    char[][] addSymbol(int r, int c, char symbol) {
+        table[r][c] = symbol;
+        return table;
     }
 }
