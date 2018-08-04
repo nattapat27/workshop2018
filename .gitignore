@@ -6,3 +6,8 @@
 /atdd/ui/*.exe
 /game/nbproject/
 /game/target/
+game/.DS_Store
+game/src/.DS_Store
+game/src/main/.DS_Store
+game/src/main/java/.DS_Store
+.DS_Store
