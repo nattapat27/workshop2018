@@ -16,5 +16,6 @@ public class GameTable {
     private int scorePlayer1;
     private int scorePlayer2;
     private int scoreTie;
+    private int turn;
     
 }
