@@ -23,14 +23,14 @@ public class GameTable {
         initialValue();
         createTable();
     }
-    
-    public  void initialValue() {
+
+    public void initialValue() {
         this.scorePlayer1 = 0;
         this.scorePlayer2 = 0;
         this.scoreTie = 0;
         this.turn = 0;
     }
-    
+
     public void createTable() {
         table = new char[3][3];
     }
@@ -46,7 +46,7 @@ public class GameTable {
         }
         return result;
     }
-    
+
     public boolean isNotFull(int turn) {
         boolean result = false;
         if (turn != 9) {
@@ -55,8 +55,8 @@ public class GameTable {
 
         return result;
     }
-    
-    public void plusTie(){
+
+    public void plusTie() {
         this.scoreTie++;
     }
 
@@ -64,7 +64,7 @@ public class GameTable {
         table[r][c] = symbol;
         return table;
     }
-    
+
     public boolean isVerticalWin(char array[][], int row, int column, char symbol) {
         boolean result = false;
         if (array[0][column] == symbol) {
@@ -76,4 +76,21 @@ public class GameTable {
         }
         return result;
     }
+
+    public boolean isDiagonalWin(char array[][], int row, int column, char symbol) {
+        boolean result = false;
+        if (array[0][0] != 0 && array[1][1] != 0 && array[2][2] != 0) {
+            //in java default value of char is 0
+            if (array[0][0] == symbol && array[1][1] == symbol && array[2][2] == symbol) {
+                return true;
+            }
+        }
+        else if (array[0][2] != 0 && array[1][1] != 0 && array[2][0] != 0) {
+            if (array[0][2] == symbol && array[1][1] == symbol && array[2][0] == symbol) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
