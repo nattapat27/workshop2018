@@ -19,6 +19,46 @@ public class GameTable {
     private int scoreTie;
     private int turn;
 
+    public char[][] getTable() {
+        return table;
+    }
+
+    public void setTable(char[][] table) {
+        this.table = table;
+    }
+
+    public int getScorePlayer1() {
+        return scorePlayer1;
+    }
+
+    public void setScorePlayer1(int scorePlayer1) {
+        this.scorePlayer1 = scorePlayer1;
+    }
+
+    public int getScorePlayer2() {
+        return scorePlayer2;
+    }
+
+    public void setScorePlayer2(int scorePlayer2) {
+        this.scorePlayer2 = scorePlayer2;
+    }
+
+    public int getScoreTie() {
+        return scoreTie;
+    }
+
+    public void setScoreTie(int scoreTie) {
+        this.scoreTie = scoreTie;
+    }
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+    
     public GameTable() {
         initialValue();
         createTable();
@@ -58,6 +98,13 @@ public class GameTable {
 
     public void plusTie() {
         this.scoreTie++;
+    }
+    public void plusPlayer1(){
+        this.scorePlayer1++;
+    }
+    
+    public void plusPlayer2(){
+        this.scorePlayer2++;
     }
 
     char[][] addSymbol(int r, int c, char symbol) {
