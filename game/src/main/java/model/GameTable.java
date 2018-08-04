@@ -77,6 +77,16 @@ public class GameTable {
         return result;
     }
 
+    public static String checkPlayerWinner(int player){
+        String playerWhoWin = "";
+        if(player%2==0){
+            playerWhoWin = "Player 1 win!";
+        }else{
+            playerWhoWin = "Player 2 win!";
+        }
+        return playerWhoWin;
+    }
+    
     public boolean isDiagonalWin(char array[][], int row, int column, char symbol) {
         boolean result = false;
         if (array[0][0] != 0 && array[1][1] != 0 && array[2][2] != 0) {
