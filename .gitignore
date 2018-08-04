@@ -1,6 +1,8 @@
-/gameXO/nbproject/private/
-/gameXO/build/
+/game/nbproject/private/
+/game/build/
 /atdd/ui/*.png
 /atdd/ui/*.html
 /atdd/ui/*.xml
 /atdd/ui/*.exe
+/game/nbproject/
+/game/target/
