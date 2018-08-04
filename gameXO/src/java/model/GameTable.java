@@ -5,10 +5,16 @@
  */
 package model;
 
+import java.util.Arrays;
+
 /**
  *
  * @author benz
  */
 public class GameTable {
+    private Arrays table[][];
+    private int scorePlayer1;
+    private int scorePlayer2;
+    private int scoreTie;
     
 }
